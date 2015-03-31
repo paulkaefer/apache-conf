@@ -59,4 +59,15 @@ I have several different websites (with different domains) on my site. For each,
 
 As you can imagine, there are different <VirtualHost>s for each subdomain (e.g., dice.paulkaefer.com or ip.paulkaefer.com).
 
+# Now what?
+
+Next, add the site(s) that have configuration files with:
+
+    sudo a2ensite /etc/apache2/sites-available/website.com
+
+Now, make sure to reload the Apache configuration and restart the server:
+
+    sudo service apache2 reload
+    sudo service apache2 restart
+
 
